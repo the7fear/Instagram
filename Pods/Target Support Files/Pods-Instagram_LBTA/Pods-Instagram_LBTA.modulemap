@@ -1,0 +1,6 @@
+framework module Pods_Instagram_LBTA {
+  umbrella header "Pods-Instagram_LBTA-umbrella.h"
+
+  export *
+  module * { export * }
+}
