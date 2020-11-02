@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		52C6E61C254B4DB300DCF22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C6E61A254B4DB300DCF22B /* LaunchScreen.storyboard */; };
 		52C6E626254B5FFB00DCF22B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6E625254B5FFB00DCF22B /* Extensions.swift */; };
 		52C6E62A254B6EE900DCF22B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52C6E629254B6EE900DCF22B /* GoogleService-Info.plist */; };
+		52E23B84254FBB590023F5DA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E23B83254FBB590023F5DA /* MainTabBarController.swift */; };
 		7EE697C23E94F093BCB09D0E /* Pods_Instagram_LBTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AACDC9F2023360EA6D1DF0A /* Pods_Instagram_LBTA.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		52C6E625254B5FFB00DCF22B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		52C6E629254B6EE900DCF22B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52D9811CF696787FB2CE0017 /* Pods-Instagram_LBTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram_LBTA.debug.xcconfig"; path = "Target Support Files/Pods-Instagram_LBTA/Pods-Instagram_LBTA.debug.xcconfig"; sourceTree = "<group>"; };
+		52E23B83254FBB590023F5DA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,6 @@
 				52D9811CF696787FB2CE0017 /* Pods-Instagram_LBTA.debug.xcconfig */,
 				15DE5395E6366DAB93953E69 /* Pods-Instagram_LBTA.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,6 +81,7 @@
 				52C6E624254B5FF000DCF22B /* Utils */,
 				52C6E60F254B4DB000DCF22B /* AppDelegate.swift */,
 				52C6E611254B4DB000DCF22B /* SceneDelegate.swift */,
+				52E23B83254FBB590023F5DA /* MainTabBarController.swift */,
 				52C6E613254B4DB000DCF22B /* ViewController.swift */,
 				52C6E615254B4DB000DCF22B /* Main.storyboard */,
 				52C6E618254B4DB300DCF22B /* Assets.xcassets */,
@@ -223,6 +225,7 @@
 			files = (
 				52C6E614254B4DB000DCF22B /* ViewController.swift in Sources */,
 				52C6E610254B4DB000DCF22B /* AppDelegate.swift in Sources */,
+				52E23B84254FBB590023F5DA /* MainTabBarController.swift in Sources */,
 				52C6E612254B4DB000DCF22B /* SceneDelegate.swift in Sources */,
 				52C6E626254B5FFB00DCF22B /* Extensions.swift in Sources */,
 			);
