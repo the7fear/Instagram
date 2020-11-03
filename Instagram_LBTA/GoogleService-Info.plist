@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>292220339340-472v435n9h1gdkp4qv9ihvrhn08hsh4e.apps.googleusercontent.com</string>
+	<string>498329582291-82m907dab04p5fqv1e0f7kts147jk2df.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.292220339340-472v435n9h1gdkp4qv9ihvrhn08hsh4e</string>
+	<string>com.googleusercontent.apps.498329582291-82m907dab04p5fqv1e0f7kts147jk2df</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCKpvAwMPkdes1J9m6yiP_LWm0A-XrFVpI</string>
+	<string>AIzaSyA19KMW6U5snnOQWJwy6CpV7wlzTwULLOg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>292220339340</string>
+	<string>498329582291</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>Niko-Co..Instagram-LBTA</string>
 	<key>PROJECT_ID</key>
-	<string>instagram-b070a</string>
+	<string>instagramlbta-d810d</string>
 	<key>STORAGE_BUCKET</key>
-	<string>instagram-b070a.appspot.com</string>
+	<string>instagramlbta-d810d.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:292220339340:ios:d6a4d55839cbef6888a7a9</string>
+	<string>1:498329582291:ios:d32e5058eb4b4f0e0c7226</string>
 	<key>DATABASE_URL</key>
-	<string>https://instagram-b070a.firebaseio.com</string>
+	<string>https://instagramlbta-d810d.firebaseio.com</string>
 </dict>
 </plist>
