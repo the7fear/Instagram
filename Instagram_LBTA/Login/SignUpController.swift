@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+class SignUpController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
   
   let plusPhotoButton: UIButton = {
     let button = UIButton(type: .system)
@@ -159,7 +159,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate & UINavi
               print("Failed to save user info into db:", err)
               return
             }
-
             print("Successfully saved user into db")
           }
         }
