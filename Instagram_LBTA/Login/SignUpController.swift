@@ -63,7 +63,6 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate & UINa
       signUpButton.isEnabled = false
       signUpButton.backgroundColor = UIColor.rgb(red: 149, green: 204, blue: 244)
     }
-    
   }
   
   let usernameTextField: UITextField = {
@@ -99,8 +98,24 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate & UINa
     return button
   }()
   
+  let alreadyHaveAccountButton: UIButton = {
+    let button = UIButton(type: .system)
+    let attributedTitle = NSMutableAttributedString(string: "Already have an account?  ", attributes: [.font: UIFont.systemFont(ofSize: 14), .foregroundColor: UIColor.lightGray])
+    attributedTitle.append(NSAttributedString(string: "Sign Ip", attributes: [.font: UIFont.boldSystemFont(ofSize: 14), .foregroundColor: UIColor.rgb(red: 17, green: 154, blue: 237)]))
+    button.setAttributedTitle(attributedTitle, for: .normal)
+    button.addTarget(self, action: #selector(handleAlreadyHaveAccount), for: .touchUpInside)
+    return button
+  }()
+  
+  @objc func handleAlreadyHaveAccount() {
+    navigationController?.popViewController(animated: true)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    view.addSubview(alreadyHaveAccountButton)
+    alreadyHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
     
     view.backgroundColor = .white
     
