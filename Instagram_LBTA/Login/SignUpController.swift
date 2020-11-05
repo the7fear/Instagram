@@ -175,6 +175,18 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate & UINa
               return
             }
             print("Successfully saved user into db")
+            
+            guard let mainTabBarController = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController as? MainTabBarController else { return }
+            
+      //      guard let mainTabBarController = UIApplication.shared.connectedScenes
+      //              .filter({$0.activationState == .foregroundActive})
+      //              .map({$0 as? UIWindowScene})
+      //              .compactMap({$0})
+      //              .first?.windows
+      //              .filter({$0.isKeyWindow}).first as? MainTabBarController else { return }
+            mainTabBarController.setupViewControllers()
+            
+            self.dismiss(animated: true, completion: nil)
           }
         }
       }
