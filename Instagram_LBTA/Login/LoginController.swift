@@ -135,9 +135,7 @@ class LoginController: UIViewController {
   }
   
   @objc fileprivate func handleShowSignUp() {
-    
     let signUpController = SignUpController()
-//    signUpController.modalPresentationStyle = .fullScreen
     navigationController?.pushViewController(signUpController, animated: true)
   }
 }

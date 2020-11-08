@@ -19,6 +19,7 @@
 		52E23B84254FBB590023F5DA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E23B83254FBB590023F5DA /* MainTabBarController.swift */; };
 		52E23B87254FBCE20023F5DA /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E23B86254FBCE20023F5DA /* UserProfileController.swift */; };
 		52E23B8B254FD1660023F5DA /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E23B8A254FD1660023F5DA /* UserProfileHeader.swift */; };
+		52E4E5F5255803F0000C795D /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E5F4255803F0000C795D /* PhotoSelectorController.swift */; };
 		7EE697C23E94F093BCB09D0E /* Pods_Instagram_LBTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AACDC9F2023360EA6D1DF0A /* Pods_Instagram_LBTA.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		52E23B83254FBB590023F5DA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		52E23B86254FBCE20023F5DA /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		52E23B8A254FD1660023F5DA /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
+		52E4E5F4255803F0000C795D /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		52C6E60E254B4DB000DCF22B /* Instagram_LBTA */ = {
 			isa = PBXGroup;
 			children = (
+				52E4E5F3255803E1000C795D /* AddPhoto */,
 				52C6E624254B5FF000DCF22B /* Utils */,
 				52C6E60F254B4DB000DCF22B /* AppDelegate.swift */,
 				52C6E611254B4DB000DCF22B /* SceneDelegate.swift */,
@@ -123,6 +126,14 @@
 				52E23B8A254FD1660023F5DA /* UserProfileHeader.swift */,
 			);
 			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		52E4E5F3255803E1000C795D /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				52E4E5F4255803F0000C795D /* PhotoSelectorController.swift */,
+			);
+			path = AddPhoto;
 			sourceTree = "<group>";
 		};
 		EC83E418D9FABE793B363134 /* Frameworks */ = {
@@ -251,6 +262,7 @@
 				52C6E614254B4DB000DCF22B /* SignUpController.swift in Sources */,
 				52E23B8B254FD1660023F5DA /* UserProfileHeader.swift in Sources */,
 				52C6E610254B4DB000DCF22B /* AppDelegate.swift in Sources */,
+				52E4E5F5255803F0000C795D /* PhotoSelectorController.swift in Sources */,
 				52E23B87254FBCE20023F5DA /* UserProfileController.swift in Sources */,
 				52E23B84254FBB590023F5DA /* MainTabBarController.swift in Sources */,
 				52B3EA922552B25000CDFB95 /* LoginController.swift in Sources */,

@@ -95,8 +95,6 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
     return cell
   }
   
-  let spacing: CGFloat = 0.5
-  
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     let width = (view.frame.width - 2) / 3
     return .init(width: width, height: width)
