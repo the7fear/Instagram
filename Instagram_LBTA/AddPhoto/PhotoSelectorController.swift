@@ -26,10 +26,11 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
   var images = [UIImage]()
   var selectedImage: UIImage?
   var assets = [PHAsset]()
+  var header: PhotoSelectorHeader?
   
   fileprivate func assetsFetchOptions() -> PHFetchOptions {
     let fetchOptions = PHFetchOptions()
-    fetchOptions.fetchLimit = 15
+    fetchOptions.fetchLimit = 30
     let sortDescriptor = NSSortDescriptor(key: "creationDate", ascending: false)
     fetchOptions.sortDescriptors = [sortDescriptor]
     return fetchOptions
@@ -61,10 +62,8 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
           DispatchQueue.main.async {
             self.collectionView.reloadData()
           }
-          
         }
       }
-      
     }
   }
   
@@ -72,11 +71,15 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
     let selectedImage = images[indexPath.item]
     self.selectedImage = selectedImage
     collectionView.reloadData()
+    
+    let indexPath = IndexPath(item: 0, section: 0)
+    collectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
   }
   
   override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
     let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! PhotoSelectorHeader
-//    header.photoImageView.image = selectedImage
+    
+    self.header = header
     
     if let selectedImage = selectedImage {
       if let index = self.images.firstIndex(of: selectedImage) {
@@ -89,10 +92,6 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
         }
       }
     }
-    
-    
-    
-    
     return header
   }
   
@@ -136,7 +135,9 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
   }
   
   @objc fileprivate func handleNext() {
-    
+    let sharePhotoController = SharePhotoController()
+    sharePhotoController.selectedImage = header?.photoImageView.image
+    navigationController?.pushViewController(sharePhotoController, animated: true)
   }
   
   @objc fileprivate func handleCancel() {

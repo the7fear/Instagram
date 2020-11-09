@@ -22,6 +22,7 @@
 		52E4E5F5255803F0000C795D /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E5F4255803F0000C795D /* PhotoSelectorController.swift */; };
 		52E4E5F825591643000C795D /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E5F725591643000C795D /* PhotoSelectorCell.swift */; };
 		52E4E611255963EE000C795D /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E610255963EE000C795D /* PhotoSelectorHeader.swift */; };
+		52E4E61425597D73000C795D /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E61325597D73000C795D /* SharePhotoController.swift */; };
 		7EE697C23E94F093BCB09D0E /* Pods_Instagram_LBTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AACDC9F2023360EA6D1DF0A /* Pods_Instagram_LBTA.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		52E4E5F4255803F0000C795D /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
 		52E4E5F725591643000C795D /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		52E4E610255963EE000C795D /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
+		52E4E61325597D73000C795D /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				52E4E5F4255803F0000C795D /* PhotoSelectorController.swift */,
+				52E4E61325597D73000C795D /* SharePhotoController.swift */,
 				52E4E5F725591643000C795D /* PhotoSelectorCell.swift */,
 				52E4E610255963EE000C795D /* PhotoSelectorHeader.swift */,
 			);
@@ -271,6 +274,7 @@
 				52E4E5F5255803F0000C795D /* PhotoSelectorController.swift in Sources */,
 				52E23B87254FBCE20023F5DA /* UserProfileController.swift in Sources */,
 				52E23B84254FBB590023F5DA /* MainTabBarController.swift in Sources */,
+				52E4E61425597D73000C795D /* SharePhotoController.swift in Sources */,
 				52E4E611255963EE000C795D /* PhotoSelectorHeader.swift in Sources */,
 				52B3EA922552B25000CDFB95 /* LoginController.swift in Sources */,
 				52C6E612254B4DB000DCF22B /* SceneDelegate.swift in Sources */,
