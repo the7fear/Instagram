@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SharePhotoController: UIViewController {
   
@@ -55,5 +56,49 @@ class SharePhotoController: UIViewController {
   
   @objc fileprivate func handleShare() {
     
+    guard let image = selectedImage else { return }
+    guard let uploadData = image.jpegData(compressionQuality: 0.5) else { return }
+    
+    let filename = NSUUID().uuidString
+    let storageRef = Storage.storage().reference().child("posts").child(filename)
+      storageRef.putData(uploadData, metadata: nil) { (metadata, error) in
+      if let error = error {
+        print("Failed to upload post image:", error)
+        return
+      }
+      
+        storageRef.downloadURL { (downloadURL, error) in
+          if let error = error {
+            self.navigationItem.rightBarButtonItem?.isEnabled = true
+            print("Failed to download URL:", error)
+            return
+          }
+          guard let imageURL = downloadURL?.absoluteString else { return }
+          print("Successfully uploaded post image", imageURL)
+          self.saveToDatabaseWithImageURL(imageURL: imageURL)
+          self.dismiss(animated: true, completion: nil)
+        }
+    }
+    navigationItem.rightBarButtonItem?.isEnabled = false
+  }
+  
+  fileprivate func saveToDatabaseWithImageURL(imageURL: String) {
+    guard let caption = textView.text, caption.count > 0 else { return }
+    guard let postImage = selectedImage else { return }
+    guard let uid = Auth.auth().currentUser?.uid else { return }
+    
+    let userPostRef = Database.database().reference().child("posts").child(uid)
+    let ref = userPostRef.childByAutoId()
+    guard let values = ["imageURL": imageURL, "caption": caption, "imageWidth": postImage.size.width, "imageHeight": postImage.size.height, "creationDate": Date().timeIntervalSince1970] as? [String: Any] else { return }
+    
+    ref.updateChildValues(values) { (err, ref) in
+      if let err = err {
+        self.navigationItem.rightBarButtonItem?.isEnabled = true
+        print("Failed to save post to db:", err)
+        return
+      }
+      
+      print("Successfully saved to db")
+    }
   }
 }

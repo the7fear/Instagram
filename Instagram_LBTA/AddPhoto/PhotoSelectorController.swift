@@ -111,7 +111,6 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PhotoSelectorCell
     cell.photoImageView.image = images[indexPath.item]
-    //    cell.backgroundColor = .blue
     return cell
   }
   
@@ -144,7 +143,6 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
     dismiss(animated: true, completion: nil)
     
     guard let mainTabBarController = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController as? MainTabBarController else { return }
-    //    let mainTabBarController = MainTabBarController()
     mainTabBarController.setupViewControllers()
     
   }

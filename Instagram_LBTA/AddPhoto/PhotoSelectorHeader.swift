@@ -8,12 +8,6 @@
 import UIKit
 
 class PhotoSelectorHeader: UICollectionViewCell {
-//  
-//  var selectedImage: UIImage? {
-//    didSet {
-//      photoImageView.image = selectedImage
-//    }
-//  }
   
   let photoImageView: UIImageView = {
     let iv = UIImageView()
