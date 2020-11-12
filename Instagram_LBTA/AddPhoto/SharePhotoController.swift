@@ -77,6 +77,9 @@ class SharePhotoController: UIViewController {
           print("Successfully uploaded post image", imageURL)
           self.saveToDatabaseWithImageURL(imageURL: imageURL)
           self.dismiss(animated: true, completion: nil)
+          
+//          guard let mainTabBarController = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController as? MainTabBarController else { return }
+//          mainTabBarController.setupViewControllers()
         }
     }
     navigationItem.rightBarButtonItem?.isEnabled = false

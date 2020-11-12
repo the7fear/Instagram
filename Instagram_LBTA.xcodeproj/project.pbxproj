@@ -25,6 +25,7 @@
 		52E4E61425597D73000C795D /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E61325597D73000C795D /* SharePhotoController.swift */; };
 		52E4E622255C4C7E000C795D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E621255C4C7E000C795D /* Post.swift */; };
 		52E4E625255C4F8F000C795D /* UserProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E624255C4F8F000C795D /* UserProfileCell.swift */; };
+		52E4E630255D4B4A000C795D /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4E62F255D4B4A000C795D /* CustomImageView.swift */; };
 		7EE697C23E94F093BCB09D0E /* Pods_Instagram_LBTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AACDC9F2023360EA6D1DF0A /* Pods_Instagram_LBTA.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		52E4E61325597D73000C795D /* SharePhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
 		52E4E621255C4C7E000C795D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		52E4E624255C4F8F000C795D /* UserProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCell.swift; sourceTree = "<group>"; };
+		52E4E62F255D4B4A000C795D /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				52C6E625254B5FFB00DCF22B /* Extensions.swift */,
+				52E4E62F255D4B4A000C795D /* CustomImageView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				52E23B8B254FD1660023F5DA /* UserProfileHeader.swift in Sources */,
 				52E4E625255C4F8F000C795D /* UserProfileCell.swift in Sources */,
 				52C6E610254B4DB000DCF22B /* AppDelegate.swift in Sources */,
+				52E4E630255D4B4A000C795D /* CustomImageView.swift in Sources */,
 				52E4E5F5255803F0000C795D /* PhotoSelectorController.swift in Sources */,
 				52E4E622255C4C7E000C795D /* Post.swift in Sources */,
 				52E23B87254FBCE20023F5DA /* UserProfileController.swift in Sources */,
